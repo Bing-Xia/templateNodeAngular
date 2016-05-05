@@ -1,0 +1,45 @@
+@import "../base/colors";
+
+@header-logo-height: 70px;
+@header-logo-width: 70px;
+
+header {
+  padding: 1em 0;
+  position: relative;
+  .tool-bar {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    .logout {
+      margin: 0 1em;
+      a {
+        color: @theme-color;
+      }
+    }
+    .tele {
+      color: @theme-color;
+      border-left: 1px solid @gray;
+      span.glyphicon {
+        margin: 0 0.5em 0 1em;
+      }
+    }
+  }
+  div.logo {
+    position: relative;
+    .img-wpr {
+      img {
+        width: @header-logo-width;
+        height: @header-logo-height;
+      }
+    }
+    .desc {
+      position: absolute;
+      left: @header-logo-width;
+      top: 0;
+      line-height: @header-logo-height;
+      margin-left: 1em;
+      border-left: 1px solid @gray;
+      padding-left: 1em;
+    }
+  }
+}

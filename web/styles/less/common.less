@@ -1,0 +1,43 @@
+@import "base/colors";
+@import "component/header";
+@import "component/footer";
+@import "component/left-menu";
+
+@body-width: 1200px;
+body {
+  background: #fafafa;
+  color: @font-color;
+}
+/* Layout Frame */
+.wpr-width {
+  width: @body-width;
+  margin: 0 auto;
+}
+/* Header of Layout*/
+.header-wpr {
+  background: @white;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #aaa;
+}
+/* Content of Layout*/
+.content-wpr {
+  margin: 0 auto;
+  .left-content {
+    width: 9em;
+    float: left;
+    margin-right: -100%;
+  }
+  .right-content {
+    float: left;
+    width: 100%;
+    padding-left: 10em;
+    .content {
+      background-color: @white;
+      min-height: 21em;
+      border: 1px solid @gray-light;
+      padding: 0.5em 1em;
+      margin-bottom: 20px;
+    }
+  }
+}
+/* End Layout Frame */

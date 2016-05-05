@@ -1,0 +1,20 @@
+{
+  "name": "angular-dynamic-controller",
+  "version": "1.0.0",
+  "description": "angular dynamic controller",
+  "dependencies": {
+    "angular": "1.2.16",
+    "angular-route": "1.2.16",
+    "angular-resource": "1.2.16",
+    "angular-cookies": "1.2.16",
+    "angular-bootstrap": "0.10.0",
+    "jquery": ">= 1.9.0",
+    "bootstrap": "~3.3.5",
+    "angular-cookie": "~4.0.9",
+    "angular-local-storage": "~0.2.3",
+    "angular-file-upload": "~2.2.0",
+    "angular-translate": "2.8.1",
+    "angular-translate-loader-static-files": "2.8.1",
+    "requirejs": "^2.2.0"
+  }
+}

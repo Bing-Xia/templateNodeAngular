@@ -1,0 +1,32 @@
+@import "../base/colors";
+nav {
+  ul.nav {
+    background-color: @white;
+    border: 1px solid @gray-light;
+    border-right: 1px solid @gray;
+    li.active {
+      a {
+        color: @theme-color;
+        /*border-left: 3px solid @theme-color;*/
+      }
+    }
+    li.active::before {
+      display: block;
+      content: ' ';
+      position: absolute;
+      background: @theme-color;
+      left: 0;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      z-index: 2;
+    }
+    li {
+      position: relative;
+      a {
+        color: @font-color;
+        padding: 1em;
+      }
+    }
+  }
+}

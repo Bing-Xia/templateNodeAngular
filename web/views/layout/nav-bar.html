@@ -1,0 +1,22 @@
+<nav>
+	<ul class="nav">
+		{% if selectedMenu == "receiptManage" %}<li class="active"><a href="#">Menu1</a></li>{% endif %}
+		{% if selectedMenu !== "receiptManage" %}<li><a href="/">Menu1</a></li>{% endif %}
+
+		{% if selectedMenu == "network" %}<li class="active"><a href="#">Menu2</a></li>{% endif %}
+		{% if selectedMenu !== "network" %}<li><a href="/public/network">Menu2</a></li>{% endif %}
+		
+		{% if selectedMenu == "history" %}<li class="active"><a href="#">Menu3</a></li>{% endif %}
+		{% if selectedMenu !== "history" %}<li><a href="/public/history">Menu3</a></li>{% endif %}
+		
+		{% if selectedMenu == "invite" %}<li class="active"><a href="#">Menu4</a></li>{% endif %}
+		{% if selectedMenu !== "invite" %}<li><a href="/public/invite">Menu4</a></li>{% endif %}
+		
+		{% if selectedMenu == "supplyManage" %}<li class="active"><a href="#">Menu5</a></li>{% endif %}
+		{% if selectedMenu !== "supplyManage" %}<li><a href="/public/supplier-manage">Menu5</a></li>{% endif %}
+
+		{% if selectedMenu == "messageCenter" %}<li class="active"><a href="#">Menu6</a></li>{% endif %}
+		{% if selectedMenu !== "messageCenter" %}<li><a href="/public/message-center">Menu6</a></li>{% endif %}
+	</ul>
+
+</nav>

@@ -1,0 +1,15 @@
+<!-- extends template with header footer -->
+{% extends "../layout/layout-hf.html" %}
+
+<!-- title -->
+{% block title %}首页{% endblock %} {% block script %}
+<script src="/static/scripts/modules/sl-index.js"></script>
+{% endblock %} {% block body %}
+<summary></summary>
+<div class="content">
+  <my-tab></my-tab>
+  <div class="cc" ng-view></div>
+</div>
+{% endblock %} {% block style %}
+<link rel="stylesheet" type="text/css" href="/static/styles/css/main.css"> {% endblock %} {% set selectedMenu = "receiptManage" %}
+

@@ -1,0 +1,22 @@
+<!-- extends template with header footer -->
+{% extends "../layout/layout-hf.html" %}
+
+<!-- title -->
+{% block title %}Network{% endblock %}
+
+<!-- scripts -->
+{% block script %}
+<script src="/static/scripts/modules/sl-default.js"></script>
+{% endblock %}
+
+<!-- body content -->
+{% block body %}
+<div class="content">
+  This is Menu3000
+</div>
+{% endblock %}
+
+<!-- styles -->
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/styles/css/main.css"> {% endblock %} {% set selectedMenu = "supplyManage" %}
+

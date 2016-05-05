@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/static/styles/css/common.css"> {% block style %}{% endblock %}
+</head>
+
+<body>
+  <script type="text/javascript">
+  // refer to node-app/constant/Constant#publicConfig
+  var AppConfig = {= JSON.stringify(AppConfig) =}
+
+  </script>
+  <div class="header-wpr">
+    <div class="wpr-width">
+      {% include "./header.html" %}
+    </div>
+  </div>
+  <div class="content-wpr wpr-width">
+    <div class="left-content">
+      {% include "./nav-bar.html" %}
+    </div>
+    <div class="right-content">
+    {% block body %}{% endblock %}</div>
+
+  </div>
+  </div>
+  <script src="/static/lib/requirejs/require.js"></script>
+  <script src="/static/scripts/config.js"></script>
+  <!-- build:js scripts/modules/app.js -->
+  {% block script %}{% endblock %}
+  <!-- endbuild -->
+
+  {% include "./footer.html" %}
+</body>
+
+</html>
+
